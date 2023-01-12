@@ -2,22 +2,23 @@ import svgoPlugins from './svgoPlugins.js'
 
 const stackConfig = {
   shape: {
-    shape: {
-      transform: [
-        {
-          svgo: {
-            plugins: [
+    transform: [
+      {
+        svgo: {
+          plugins: [
+            ...svgoPlugins,
+            ...[
               {
-                name: 'preset-default',
+                name: 'removeAttrs',
                 params: {
-                  overrides: svgoPlugins
+                  attrs: '(fill|stroke)'
                 }
               }
             ]
-          }
+          ]
         }
-      ]
-    }
+      }
+    ]
   },
   mode: {
     stack: {
