@@ -19,6 +19,7 @@ import reset from './gulp/tasks/reset.js'
 import images from './gulp/tasks/images.js'
 import js from './gulp/tasks/js.js'
 import files from './gulp/tasks/files.js'
+import favicons from './gulp/tasks/favicons.js'
 
 // Sprite
 import spriteStack from './gulp/tasks/sprite/stack.js'
@@ -47,6 +48,7 @@ const sprite = gulp.parallel(spriteStack, spriteSymbol)
 const mainTasks = gulp.series(
   fonts,
   sprite,
+  favicons,
   gulp.parallel(pug, scss, js, images, files)
 )
 
