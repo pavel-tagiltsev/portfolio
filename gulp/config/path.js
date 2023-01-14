@@ -12,7 +12,8 @@ export default {
     js: `${buildFolder}/js/`,
     images: `${buildFolder}/images/`,
     files: `${buildFolder}/files/`,
-    fonts: `${buildFolder}/fonts/`
+    fonts: `${buildFolder}/fonts/`,
+    favicons: `${buildFolder}/`
   },
   source: {
     pug: `${sourceFolder}/pages/*.pug`,
@@ -26,7 +27,8 @@ export default {
     sprite: {
       stack: `${sourceFolder}/svg/stack/**/*.svg`,
       symbol: `${sourceFolder}/svg/symbol/**/*.svg`
-    }
+    },
+    favicons: `${sourceFolder}/favicons/*.{png,xml,ico,svg,webmanifest}`
   },
   watch: {
     pug: `${sourceFolder}/**/*.pug`,
