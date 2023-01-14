@@ -13,6 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoint: 768,
     elements: document.querySelectorAll('[data-scroll-center]'),
     className: 'project--hovered',
-    timeout: 200
+    timeout: 1000
   })
 })
