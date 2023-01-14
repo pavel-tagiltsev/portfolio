@@ -1,0 +1,86 @@
+@import "./fonts";
+
+.project {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+  transform: translateY(0);
+
+  transition: transform 300ms ease;
+
+  &--hovered,
+  &--focused {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+
+    & > .project__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(180deg, rgba(51, 51, 51, 0.25) 0%, #333333 100%);
+      border: 4px solid $primary;
+
+      border-radius: 20px;
+      opacity: 1;
+      backdrop-filter: blur(2px);
+    }
+  }
+}
+
+.project__content {
+  opacity: 0;
+
+  transition: opacity 300ms ease;
+}
+
+.project__title {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+
+  text-align: center;
+}
+
+.project__links {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  left: 0;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+.project__link {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.project__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  background-color: #e5e5e5;
+
+  border-radius: 20px;
+}

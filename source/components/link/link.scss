@@ -1,0 +1,75 @@
+.link {
+  position: relative;
+
+  display: inline-block;
+  padding: 5px;
+  padding-left: 35px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+
+    width: 25px;
+    height: 25px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+  }
+
+  &:hover::before,
+  &:focus::before {
+    filter: $filter-primary;
+  }
+
+  &:hover > span::after,
+  &:focus > span::after {
+    width: 100%;
+  }
+
+  &--dark::before {
+    filter: $filter-black;
+  }
+
+  &--light::before {
+    filter: $filter-white;
+  }
+
+  &--web::before {
+    background-image: url("../images/stack-sprite.svg#web");
+  }
+
+  &--github::before {
+    background-image: url("../images/stack-sprite.svg#github");
+  }
+
+  &--email::before {
+    top: 5px;
+
+    background-image: url("../images/stack-sprite.svg#email");
+  }
+}
+
+.link > span {
+  position: relative;
+}
+
+.link > span::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  background-color: #ffd047;
+  border-radius: 20px;
+
+  transition: width 300ms ease;
+
+  content: "";
+}

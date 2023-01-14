@@ -1,0 +1,29 @@
+mixin project(project)
+  -
+    const links = [
+      {
+        title: 'Preview',
+        url: project.preview,
+        mode: 'light',
+        icon: 'web'
+      },
+      {
+        title: 'GitHub',
+        url: project.github,
+        mode: 'light',
+        icon: 'github'
+      }
+    ]
+
+  li(tabindex='0' data-scroll-center).project
+    .project__content
+      h3.project__title= project.name
+      .project__links
+        each link in links
+          +link(link).project__link
+    img(
+      src!=`@img/${project.name.toLowerCase()}-preview.png`
+      alt!=`Preview of the project ${project.name}`
+      width='400'
+      height='230'
+    ).project__image
