@@ -1,3 +1,19 @@
+-
+  const links = [
+    {
+      title: 'pavel.tagiltsef@gmail.com',
+      url: 'mailto:pavel.tagiltsef@gmail.com',
+      mode: 'dark',
+      icon: 'email'
+    },
+    {
+      title: 'GitHub',
+      url: 'https://github.com/pavel-tagiltsev',
+      mode: 'dark',
+      icon: 'github'
+    }
+  ]
+
 mixin about
   section(class!='about' + '')&attributes(attributes)
     img(
@@ -17,11 +33,6 @@ mixin about
       | If you need any information or have any questions, please, don't hesitate and contact me.
 
     ul.about__contacts-list
-      li.about__contacts-item
-        a(
-          href='mailto:pavel.tagiltsef@gmail.com'
-        ).about__link.about__link--email pavel.tagiltsef@gmail.com
-      li.about__contacts-item
-        a(
-          href='https://github.com/pavel-tagiltsev'
-        ).about__link.about__link--github GitHub
+      each link in links
+        li.about__contacts-item
+          +link(link)
