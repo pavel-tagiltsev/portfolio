@@ -15,7 +15,7 @@ mixin project(project)
       }
     ]
 
-  li(tabindex='0' data-scroll-center).project
+  li(class!=`${'project'}` tabindex='0' data-scroll-center)&attributes(attributes)
     .project__content
       h3.project__title= project.name
       .project__links

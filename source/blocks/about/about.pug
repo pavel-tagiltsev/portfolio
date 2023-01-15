@@ -15,7 +15,7 @@
   ]
 
 mixin about
-  section(class!='about' + '')&attributes(attributes)
+  section(class!=`${'about'}`)&attributes(attributes)
     img(
       src='@img/avatar.jpg'
       alt='Developer\'s photo'

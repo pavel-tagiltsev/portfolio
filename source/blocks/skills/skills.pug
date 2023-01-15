@@ -18,7 +18,7 @@
   ]
 
 mixin skills
-  section(class!='skills' + '')&attributes(attributes)
+  section(class!=`${'skills'}`)&attributes(attributes)
     h3.skills__title Coding
     ul.skills__list
       each skill in codingSkills
