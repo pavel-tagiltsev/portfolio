@@ -1,0 +1,72 @@
+{
+  "pages": {
+    "index": {
+      "meta": {
+        "title": "Pavel Tagiltsev's portfolio",
+        "description": "My name is Pavel and I am a frontend developer. I am passionate about creating structured and organized web applications that are polished and of high quality. I take pride in paying attention to detail and optimizing the performance of my projects. My ultimate goal is to deliver professional and effective websites to my clients. If you have any questions or need further information, please don't hesitate to reach out to me.",
+        "preview": "@img/meta-preview.jpg"
+      },
+      "data": {
+        "name": "Pavel Tagiltsev",
+        "profession": "Frontend-developer",
+        "about": "My name is Pavel and I am a frontend developer. I am passionate about creating structured and organized web applications that are polished and of high quality. I take pride in paying attention to detail and optimizing the performance of my projects. My ultimate goal is to deliver professional and effective websites to my clients. If you have any questions or need further information, please don't hesitate to reach out to me.",
+        "links": [
+          {
+            "title": "pavel.tagiltsef@gmail.com",
+            "url": "mailto:pavel.tagiltsef@gmail.com",
+            "mode": "dark",
+            "icon": "email"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/pavel-tagiltsev",
+            "mode": "dark",
+            "icon": "github"
+          }
+        ],
+        "skills": {
+          "coding": [
+            "html",
+            "css",
+            "pug",
+            "sass",
+            "javascript",
+            "react",
+            "redux",
+            "webpack",
+            "gulp",
+            "git"
+          ],
+          "design": ["figma", "photoshop"]
+        },
+        "projects": [
+          {
+            "name": "Keksobooking",
+            "preview": "https://pavel-tagiltsev.github.io/keksobooking/",
+            "github": "https://github.com/pavel-tagiltsev/keksobooking"
+          },
+          {
+            "name": "OWLtop",
+            "preview": "https://pavel-tagiltsev.github.io/gulp-bolierplate/",
+            "github": "https://github.com/pavel-tagiltsev/gulp-bolierplate"
+          },
+          {
+            "name": "Device",
+            "preview": "https://pavel-tagiltsev.github.io/device/",
+            "github": "https://github.com/pavel-tagiltsev/device"
+          },
+          {
+            "name": "Barbershop",
+            "preview": "https://pavel-tagiltsev.github.io/barbershop/",
+            "github": "https://github.com/pavel-tagiltsev/barbershop"
+          },
+          {
+            "name": "Transbuilding",
+            "preview": "https://pavel-tagiltsev.github.io/transbuilding/",
+            "github": "https://github.com/pavel-tagiltsev/transbuilding"
+          }
+        ]
+      }
+    }
+  }
+}

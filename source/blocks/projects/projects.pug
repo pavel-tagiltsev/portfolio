@@ -1,33 +1,4 @@
--
-  const projects = [
-    {
-      name: "Keksobooking",
-      preview: "https://pavel-tagiltsev.github.io/keksobooking/",
-      github: "https://github.com/pavel-tagiltsev/keksobooking"
-    },
-    {
-      name: "OWLtop",
-      preview: "https://pavel-tagiltsev.github.io/gulp-bolierplate/",
-      github: "https://github.com/pavel-tagiltsev/gulp-bolierplate"
-    },
-    {
-      name: "Device",
-      preview: "https://pavel-tagiltsev.github.io/device/",
-      github: "https://github.com/pavel-tagiltsev/device"
-    },
-    {
-      name: "Barbershop",
-      preview: "https://pavel-tagiltsev.github.io/barbershop/",
-      github: "https://github.com/pavel-tagiltsev/barbershop"
-    },
-    {
-      name: "Transbuilding",
-      preview: "https://pavel-tagiltsev.github.io/transbuilding/",
-      github: "https://github.com/pavel-tagiltsev/transbuilding"
-    }
-  ]
-
-mixin projects
+mixin projects(projects)
   section(class!=`${'projects'}`)&attributes(attributes)
     h2.projects__title Projects
     ul.projects__list

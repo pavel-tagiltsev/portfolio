@@ -1,29 +1,10 @@
--
-  const codingSkills = [
-    'html',
-    'css',
-    'pug',
-    'sass',
-    'javascript',
-    'react',
-    'redux',
-    'webpack',
-    'gulp',
-    'git',
-  ]
-
-  const designSkills = [
-    'figma',
-    'photoshop',
-  ]
-
-mixin skills
+mixin skills(skills)
   section(class!=`${'skills'}`)&attributes(attributes)
     h3.skills__title Coding
     ul.skills__list
-      each skill in codingSkills
+      each skill in skills.coding
         li(class!=`skills__item skills__item--${skill}`)= skill
     h3.skills__title Design
     ul.skills__list
-      each skill in designSkills
+      each skill in skills.design
         li(class!=`skills__item skills__item--${skill}`)= skill

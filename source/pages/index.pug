@@ -1,10 +1,11 @@
 extends ../layout/layout
 
 block varaiables
-  - const title = 'Index'
+  - const meta = pages.index.meta
+  - const {links, skills, projects, profession, name, about} = pages.index.data
 
 block main
   .index-main
-    +about.index-main__about
-    +skills.index-main__skills
-    +projects.index-main__projects
+    +about(links, {profession, name, about}).index-main__about
+    +skills(skills).index-main__skills
+    +projects(projects).index-main__projects
