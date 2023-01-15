@@ -1,5 +1,7 @@
 mixin about(links, content)
   section(class!=`${'about'}`)&attributes(attributes)
+    h2.visually-hidden About the developer
+
     img(
       src='@img/avatar.jpg'
       alt='Developer\'s photo'
@@ -7,11 +9,11 @@ mixin about(links, content)
       height='240'
     ).about__avatar
 
-    h2.about__profession= content.profession
-    h3.about__name= content.name
+    p.about__profession= content.profession
+    p.about__name= content.name
     p.about__description= content.about
 
     ul.about__contacts-list
       each link in links
         li.about__contacts-item
-          +link(link)
+          +link({...link, ...{mode: 'dark'}})

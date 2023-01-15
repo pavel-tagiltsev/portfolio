@@ -1,5 +1,7 @@
 mixin skills(skills)
   section(class!=`${'skills'}`)&attributes(attributes)
+    h2.visually-hidden Developer Skills
+
     h3.skills__title Coding
     ul.skills__list
       each skill in skills.coding

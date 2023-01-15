@@ -1,6 +1,7 @@
 mixin projects(projects)
   section(class!=`${'projects'}`)&attributes(attributes)
     h2.projects__title Projects
+
     ul.projects__list
       each project in projects
         +project(project)

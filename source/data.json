@@ -14,13 +14,11 @@
           {
             "title": "pavel.tagiltsef@gmail.com",
             "url": "mailto:pavel.tagiltsef@gmail.com",
-            "mode": "dark",
             "icon": "email"
           },
           {
             "title": "GitHub",
             "url": "https://github.com/pavel-tagiltsev",
-            "mode": "dark",
             "icon": "github"
           }
         ],
