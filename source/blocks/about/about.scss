@@ -1,3 +1,5 @@
+@import "./fonts";
+
 .about {
   text-align: center;
 }
@@ -13,24 +15,18 @@
   object-position: 0 -80px;
 
   border-radius: 100%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: $shadow-primary;
   rotate: 10deg;
 }
 
 .about__profession {
   margin: 0;
   margin-bottom: 7px;
-
-  font-weight: inherit;
-  font-size: 24px;
 }
 
 .about__name {
   margin: 0;
   margin-bottom: 25px;
-
-  font-weight: inherit;
-  font-size: inherit;
 }
 
 .about__description {
@@ -40,10 +36,7 @@
 }
 
 .about__contacts-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-style-none;
 }
 
 .about__contacts-item {
