@@ -1,4 +1,4 @@
-@import "./fonts";
+@import './fonts';
 
 .skills {
   max-width: 680px;
@@ -49,70 +49,70 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    content: "";
+    content: '';
   }
 
   &--html::before {
-    background-image: url("../images/stack-sprite.svg#html-logo");
+    background-image: url('../images/stack-sprite.svg#html-logo');
   }
 
   &--css::before {
-    background-image: url("../images/stack-sprite.svg#css-logo");
+    background-image: url('../images/stack-sprite.svg#css-logo');
   }
 
   &--pug::before {
-    background-image: url("../images/stack-sprite.svg#pug-logo");
+    background-image: url('../images/stack-sprite.svg#pug-logo');
   }
 
   &--sass::before {
-    background-image: url("../images/stack-sprite.svg#sass-logo");
+    background-image: url('../images/stack-sprite.svg#sass-logo');
   }
 
   &--javascript::before {
-    background-image: url("../images/stack-sprite.svg#javascript-logo");
+    background-image: url('../images/stack-sprite.svg#javascript-logo');
   }
 
   &--react::before {
-    background-image: url("../images/stack-sprite.svg#react-logo");
+    background-image: url('../images/stack-sprite.svg#react-logo');
   }
 
   &--redux::before {
-    background-image: url("../images/stack-sprite.svg#redux-logo");
+    background-image: url('../images/stack-sprite.svg#redux-logo');
   }
 
   &--nodejs::before {
-    background-image: url("../images/stack-sprite.svg#nodejs-logo");
+    background-image: url('../images/stack-sprite.svg#nodejs-logo');
   }
 
   &--gas::before {
-    background-image: url("../images/stack-sprite.svg#gas-logo");
+    background-image: url('../images/stack-sprite.svg#gas-logo');
   }
 
   &--tg-bot::before {
-    background-image: url("../images/stack-sprite.svg#tg-bot-logo");
+    background-image: url('../images/stack-sprite.svg#tg-bot-logo');
   }
 
   &--webpack::before {
-    background-image: url("../images/stack-sprite.svg#webpack-logo");
+    background-image: url('../images/stack-sprite.svg#webpack-logo');
   }
 
   &--gulp::before {
-    background-image: url("../images/stack-sprite.svg#gulp-logo");
+    background-image: url('../images/stack-sprite.svg#gulp-logo');
   }
 
   &--git::before {
-    background-image: url("../images/stack-sprite.svg#git-logo");
+    background-image: url('../images/stack-sprite.svg#git-logo');
   }
 
   &--figma::before {
-    background-image: url("../images/stack-sprite.svg#figma-logo");
+    background-image: url('../images/stack-sprite.svg#figma-logo');
   }
 
   &--photoshop::before {
-    background-image: url("../images/stack-sprite.svg#photoshop-logo");
+    background-image: url('../images/stack-sprite.svg#photoshop-logo');
   }
 
   &--sketch::before {
-    background-image: url("../images/stack-sprite.svg#sketch-logo");
+    background-image: url('../images/stack-sprite.svg#sketch-logo');
   }
 }

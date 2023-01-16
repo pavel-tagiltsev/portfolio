@@ -5,19 +5,19 @@
   grid-template-rows: 1fr;
 }
 
-@include media(">desktop") {
+@include media('>desktop') {
   .projects__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@include media(">=tablet", "<desktop") {
+@include media('>=tablet', '<desktop') {
   .projects__list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@include media("<tablet") {
+@include media('<tablet') {
   .projects__list {
     grid-template-columns: 1fr;
   }

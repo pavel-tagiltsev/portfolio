@@ -34,7 +34,7 @@
         "ignore": ["custom-properties"]
       }
     ],
-    "string-quotes": "double",
+    "string-quotes": "single",
     "unit-case": "lower",
     "value-keyword-case": "lower",
     "value-list-comma-newline-after": "always-multi-line",

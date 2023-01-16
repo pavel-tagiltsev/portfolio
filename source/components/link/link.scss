@@ -20,7 +20,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    content: "";
+    content: '';
   }
 
   &--dark::before {
@@ -37,17 +37,17 @@
   }
 
   &--web::before {
-    background-image: url("../images/stack-sprite.svg#web");
+    background-image: url('../images/stack-sprite.svg#web');
   }
 
   &--github::before {
-    background-image: url("../images/stack-sprite.svg#github");
+    background-image: url('../images/stack-sprite.svg#github');
   }
 
   &--email::before {
     top: 5px;
 
-    background-image: url("../images/stack-sprite.svg#email");
+    background-image: url('../images/stack-sprite.svg#email');
   }
 }
 
@@ -68,7 +68,7 @@
 
   transition: width 300ms ease;
 
-  content: "";
+  content: '';
 }
 
 .link--hovered > span::after,

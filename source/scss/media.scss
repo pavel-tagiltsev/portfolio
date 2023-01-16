@@ -1,8 +1,7 @@
 $breakpoints: (
-  "phone": 320px,
-  "tablet": 768px,
-  "desktop": 1200px
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1200px
 ) !default;
 
-@import "include-media";
-
+@import 'include-media';

@@ -1,5 +1,5 @@
-@import "./grid";
-@import "./fonts";
+@import './grid';
+@import './fonts';
 
 .projects__title {
   margin: 0;
@@ -11,4 +11,3 @@
 .projects__list {
   @include list-style-none;
 }
-

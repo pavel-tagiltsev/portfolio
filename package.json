@@ -14,7 +14,7 @@
     "eclint": "eclint check \"**/*.*\"",
     "stylelint": "stylelint \"source/**/*.scss\"",
     "prettier": "prettier --check \"**/*.*\"",
-    "--check": "npm run eclint & npm run stylelint & npm run prettier"
+    "check": "npm run eclint & npm run stylelint & npm run prettier"
   },
   "author": "pavel.tagiltsev <pavel.tagiltsef@gmail.com>",
   "license": "ISC",
@@ -36,7 +36,7 @@
     "not ie <= 11"
   ],
   "devDependencies": {
-    "@prettier/plugin-pug": "^2.0.0",
+    "@prettier/plugin-pug": "^2.3.0",
     "@prettier/plugin-xml": "^2.1.0",
     "autoprefixer": "^10.4.4",
     "browser-sync": "^2.27.9",
@@ -70,7 +70,7 @@
     "gulp-zip": "^5.1.0",
     "include-media": "^1.4.10",
     "postcss-csso": "^6.0.0",
-    "prettier": "^2.6.2",
+    "prettier": "^2.8.3",
     "pug": "^3.0.2",
     "sass": "^1.50.0",
     "stylelint": "^14.8.2",

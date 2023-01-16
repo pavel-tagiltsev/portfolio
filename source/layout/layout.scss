@@ -19,13 +19,13 @@
   grid-column: 1 / 4;
 }
 
-@include media("<desktop") {
+@include media('<desktop') {
   .layout {
     column-gap: $tablet-paddings;
   }
 }
 
-@include media("<tablet") {
+@include media('<tablet') {
   .layout {
     column-gap: $mobile-paddings;
   }

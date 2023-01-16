@@ -1,4 +1,4 @@
-@import "./fonts";
+@import './fonts';
 
 .project {
   position: relative;
@@ -29,7 +29,7 @@
     transform: translateY(-3px);
 
     & > .project__content {
-      z-index: z("content-card");
+      z-index: z('content-card');
 
       opacity: 1;
     }
@@ -92,7 +92,7 @@
 
 .project__image {
   position: relative;
-  z-index: z("image-card");
+  z-index: z('image-card');
 
   display: block;
   width: 100%;
