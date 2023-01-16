@@ -11,8 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new ResponsiveScrollCenter({
     breakpoint: 768,
-    elements: document.querySelectorAll('[data-scroll-center]'),
+    elements: document.querySelectorAll('[data-scroll-center-project]'),
     className: 'project--hovered',
-    timeout: 1000
+    timeout: 100
+  })
+
+  new ResponsiveScrollCenter({
+    breakpoint: 768,
+    elements: document.querySelectorAll('[data-scroll-center-links]'),
+    className: 'link--hovered',
+    timeout: 10
   })
 })

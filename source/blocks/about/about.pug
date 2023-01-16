@@ -16,4 +16,4 @@ mixin about(links, content)
     ul.about__contacts-list
       each link in links
         li.about__contacts-item
-          +link({...link, ...{mode: 'dark'}})
+          +link({...link, ...{mode: 'dark'}})(data-scroll-center-links)
