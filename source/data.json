@@ -38,7 +38,7 @@
             "gulp",
             "git"
           ],
-          "design": ["figma", "photoshop"]
+          "design": ["figma", "photoshop", "sketch"]
         },
         "projects": [
           {

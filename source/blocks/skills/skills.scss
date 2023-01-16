@@ -111,4 +111,8 @@
   &--photoshop::before {
     background-image: url("../images/stack-sprite.svg#photoshop-logo");
   }
+
+  &--sketch::before {
+    background-image: url("../images/stack-sprite.svg#sketch-logo");
+  }
 }
