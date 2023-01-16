@@ -11,12 +11,26 @@
 
   transition: transform 300ms ease;
 
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-primary;
+    transform: translateY(-3px);
+
+    & > .project__content {
+      z-index: 2;
+
+      opacity: 1;
+    }
+  }
+
   &--hovered,
   &--focused {
     box-shadow: $shadow-primary;
     transform: translateY(-3px);
 
     & > .project__content {
+      z-index: z("content-card");
+
       opacity: 1;
     }
   }
@@ -26,6 +40,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 
   width: 100%;
   height: 100%;
@@ -76,6 +91,9 @@
 }
 
 .project__image {
+  position: relative;
+  z-index: z("image-card");
+
   display: block;
   width: 100%;
   height: 100%;
