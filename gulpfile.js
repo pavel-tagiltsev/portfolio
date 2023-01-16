@@ -34,6 +34,7 @@ import fontStyle from './gulp/tasks/fonts/fontStyle.js'
 // Additional
 import server from './gulp/tasks/server.js'
 import zip from './gulp/tasks/zip.js'
+import deploy from './gulp/tasks/deploy.js'
 
 function watcher() {
   gulp.watch(path.watch.pug, pug)
@@ -60,5 +61,6 @@ const deployZIP = gulp.series(reset, mainTasks, zip)
 export {build}
 export {deployZIP}
 export {sprite}
+export {deploy}
 
 gulp.task('default', dev)

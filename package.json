@@ -8,7 +8,8 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
+    "deployFTP": "gulp deployFTP --build",
+    "deploy": "gulp deploy",
     "sprite": "gulp sprite",
     "eclint": "eclint check \"**/*.*\"",
     "stylelint": "stylelint \"source/**/*.scss\"",
@@ -79,6 +80,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
     "normalize.css": "^8.0.1"
   }
 }
