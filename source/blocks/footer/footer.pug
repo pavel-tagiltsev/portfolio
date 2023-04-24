@@ -1,6 +1,0 @@
-mixin footer(links, content)
-  footer(class!=`${'footer'}`)&attributes(attributes)
-    ul.footer__contacts-list
-      each link in links
-        li.footer__contacts-item
-          +link({...link, ...{mode: 'light'}})
