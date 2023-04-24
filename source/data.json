@@ -42,14 +42,19 @@
         },
         "projects": [
           {
+            "name": "Carusel",
+            "preview": "https://pavel-tagiltsev.github.io/digital-agency-siart-test/",
+            "github": "https://github.com/pavel-tagiltsev/digital-agency-siart-test"
+          },
+          {
             "name": "Keksobooking",
             "preview": "https://pavel-tagiltsev.github.io/keksobooking/",
             "github": "https://github.com/pavel-tagiltsev/keksobooking"
           },
           {
             "name": "OWLtop",
-            "preview": "https://pavel-tagiltsev.github.io/gulp-bolierplate/",
-            "github": "https://github.com/pavel-tagiltsev/gulp-bolierplate"
+            "preview": "https://pavel-tagiltsev.github.io/owl-top/",
+            "github": "https://github.com/pavel-tagiltsev/owl-top"
           },
           {
             "name": "Device",
